@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MTK Wallet - Sepolia Testnet</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <h1>MTK Wallet</h1>
+    <button id="connectBtn">Connect Wallet</button>
+    <div id="walletInfo" style="display:none;">
+      <p><strong>Adresse :</strong> <span id="address"></span></p>
+      <p><strong>Balance MTK :</strong> <span id="balance">0</span> MTK (~ $<span id="usdValue">0</span>)</p>
+      <input type="text" id="recipient" placeholder="Adresse destinataire" />
+      <input type="number" id="amount" placeholder="Montant MTK à envoyer" min="0" step="0.01" />
+      <button id="sendBtn">Envoyer MTK</button>
+      <p id="status"></p>
+    </div>
+  </div>
+  <footer>
+    <p>© 2025 MTK Wallet</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
