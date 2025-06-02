@@ -4,35 +4,66 @@
 body, html {
   height: 100%;
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #121212;
+  color: #eee;
   display: flex;
   flex-direction: column;
 }
 #app {
   flex: 1;
-  padding: 20px;
   max-width: 480px;
   margin: auto;
-  width: 100%;
+  padding: 20px;
+  background: #1f1f1f;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
 }
 h1 {
   text-align: center;
+  color: #4caf50;
 }
 button {
-  padding: 10px 20px;
-  margin-top: 10px;
+  background: #4caf50;
+  border: none;
+  color: white;
+  padding: 12px 0;
+  font-size: 1.2rem;
+  cursor: pointer;
   width: 100%;
-  font-size: 1.1rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background: #45a044;
 }
 input {
   width: 100%;
-  padding: 10px;
-  margin-top: 10px;
+  padding: 12px;
+  margin-top: 12px;
   font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #333;
+  background: #222;
+  color: #eee;
+}
+input::placeholder {
+  color: #aaa;
 }
 footer {
   text-align: center;
-  padding: 10px;
-  background: #f0f0f0;
+  padding: 15px;
   font-size: 0.9rem;
+  background: #181818;
+  color: #666;
 }
+#status {
+  margin-top: 10px;
+  font-weight: bold;
+  min-height: 20px;
+}
+#connectStatus {
+  color: #f39c12;
+  text-align: center;
+}
+
